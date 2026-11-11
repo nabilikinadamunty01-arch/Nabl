@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#070711">
+
+    <title>My Portfolio</title>
+    <meta name="description" content="Welcome to my personal portfolio.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- RGB TOP LINE -->
+    <div class="rgb-line"></div>
+
+    <!-- PARTICLE BACKGROUND -->
+    <canvas id="particles"></canvas>
+
+    <!-- LOADING SCREEN -->
+    <div class="loader" id="loader">
+        <div class="loader-logo">PORTFOLIO</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+        <p>MY ACTIVITY IN THE WORLD...</p>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            B1<span>.</span>
+        </a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+            ☰
+        </button>
+
+    </nav>
+
+    <!-- HERO -->
+    <main>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content reveal">
+
+            <div class="system-status">
+                <span class="status-dot"></span>
+                SYSTEM ONLINE
+            </div>
+
+            <p class="eyebrow">WELCOME TO MY DIGITAL PORTFOLIO</p>
+
+            <h1>
+                I'M <span class="gradient-text">NABIL IKINADA MUNTY</span>
+            </h1>
+
+            <div class="typing-wrapper">
+                <span class="typing-prefix">></span>
+                <span id="typing"></span>
+                <span class="cursor-blink">_</span>
+            </div>
+
+            <p class="hero-description">
+                Welcome to my personal world.
+                Explore my creativity, passion, skills,
+                and journey through the universe.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">
+                    EXPLORE MY WORLD ↗
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    CONTACT ME
+                </a>
+            </div>
+
+            <div class="hero-socials">
+                <a href="https://github.com/USERNAME" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+                <a href="https://instagram.com/USERNAME" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
+            </div>
+
+        </div>
+
+        <div class="hero-visual reveal">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="profile-card tilt-card">
+
+                <div class="card-top">
+                    <span>IDENTITY PROFILE</span>
+                    <span class="online">● ONLINE</span>
+                </div>
+
+                <div class="profile-frame">
+                    <img src="assets/profile.jpg"
+                         alt="My profile photo"
+                         onerror="this.style.display='none';this.parentElement.classList.add('no-photo')">
+                    <span class="photo-placeholder">YOUR PHOTO</span>
+                </div>
+
+                <h2>NABIL IKINADA M.</h2>
+                <p>CREATIVE MIND · DIGITAL WORLD</p>
+
+                <div class="profile-stats">
+                    <div>
+                        <strong>01</strong>
+                        <small>IDENTITY</small>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <small>DREAMS</small>
+                    </div>
+
+                    <div>
+                        <strong>24/7</strong>
+                        <small>CREATIVE</small>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <span>USER ID: 000001</span>
+                    <span>VER. 2.0</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+            <span></span>
+            SCROLL TO EXPLORE
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section reveal" id="about">
+
+        <div class="section-heading">
+            <p>01 / INTRODUCTION</p>
+            <h2>ABOUT <span>ME</span></h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-main glass-card tilt-card">
+                <span class="mini-label">WHO AM I?</span>
+
+                <h3>Beyond The Ordinary.</h3>
+
+                <p>
+                    Halo! Nama saya <strong>NABIL IKINADA MUNTY</strong>.
+                    Saya berasal dari Sumatra barat.
+
+                    Saya adalah seseorang yang memiliki rasa ingin
+                    tahu tinggi, suka mempelajari hal baru, dan
+                    tertarik pada dunia teknologi serta kreativitas lebih prefer ke alat musik.
+
+                    Saya percaya bahwa masa depan dibangun dari
+                    keberanian untuk mencoba sesuatu yang baru.
+                </p>
+
+                <div class="quote">
+                    "CREATE YOUR OWN FUTURE."
+                </div>
+            </div>
+
+            <div class="about-info glass-card tilt-card">
+                <span class="mini-label">PERSONAL DATA</span>
+
+                <div class="info-row">
+                    <span>NABL</span>
+                    <strong>NABIL IKINADA MUNTY</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>SUMATRA BARAT</span>
+                    <strong>BATUSANGKAR CITY</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>STATUS</span>
+                    <strong class="cyan">ALWAYS LEARNING</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>INTEREST</span>
+                    <strong>TECH & CREATIVE</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>MISSION</span>
+                    <strong>BE BETTER</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section reveal" id="skills">
+
+        <div class="section-heading">
+            <p>02 / CAPABILITIES</p>
+            <h2>MY <span>SKILLS</span></h2>
+        </div>
+
+        <div class="skill-grid">
+
+            <div class="skill-card tilt-card">
+                <div class="skill-icon">⌘</div>
+                <h3>HTML</h3>
+                <p>Web Structure</p>
+                <div class="skill-line"><span style="width:85%"></span></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+                <div class="skill-icon">✧</div>
+                <h3>CSS</h3>
+                <p>Creative Design</p>
+                <div class="skill-line"><span style="width:80%"></span></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+                <div class="skill-icon">⚡</div>
+                <h3>JAVASCRIPT</h3>
+                <p>Interactive Web</p>
+                <div class="skill-line"><span style="width:65%"></span></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+                <div class="skill-icon">◈</div>
+                <h3>CREATIVITY</h3>
+                <p>Creative Thinking</p>
+                <div class="skill-line"><span style="width:90%"></span></div>
+            </div>
+
+        </div>
+
+        <p class="skill-note">
+            * Persentase di atas adalah hal yang pernah saya lalui dalam hidup
+        </p>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section reveal" id="projects">
+
+        <div class="section-heading">
+            <p>03 / MY WORKSPACE</p>
+            <h2>MY <span>PROJECTS</span></h2>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="project-card tilt-card">
+                <div class="project-number">PROJECT_01</div>
+                <div class="project-symbol">◈</div>
+                <h3>PERSONAL WEBSITE</h3>
+                <p>A personal digital space to introduce myself.</p>
+                <span class="project-tag">WEB DEVELOPMENT</span>
+            </article>
+
+            <article class="project-card tilt-card">
+                <div class="project-number">PROJECT_02</div>
+                <div class="project-symbol">⌘</div>
+                <h3>DIGITAL DESIGN</h3>
+                <p>Exploring futuristic design and digital creativity.</p>
+                <span class="project-tag">CREATIVE DESIGN</span>
+            </article>
+
+            <article class="project-card tilt-card">
+                <div class="project-number">PROJECT_03</div>
+                <div class="project-symbol">⚡</div>
+                <h3>FUTURE PROJECT</h3>
+                <p>More exciting projects are coming soon.</p>
+                <span class="project-tag">COMING SOON</span>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section reveal" id="contact">
+
+        <div class="contact-box glass-card">
+
+            <p class="mini-label">04 / ESTABLISH CONNECTION</p>
+
+            <h2>LET'S CONNECT<span>.</span></h2>
+
+            <p>
+                Have an interesting idea, want to collaborate,
+                or simply want to say hello?
+                My digital door is always open.
+            </p>
+
+            <div class="contact-buttons">
+                <a href="https://instagram.com/USERNAME"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-primary">@nabilikinadaa</a>
+
+                <a href="https://github.com/USERNAME"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-outline">nabilikinadamunty01-arch ↗</a>
+
+                <a href="mailto:your@email.com"
+                   class="btn btn-outline">nabilikinadamunty@gmail,com ↗</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    </main>
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-player" id="musicPlayer">
+
+        <audio id="audio" src="assets/music.mp3" preload="none" loop></audio>
+
+        <div class="music-info">
+            <div class="music-disc" id="musicDisc">♫</div>
+            <div>
+                <strong>MY SOUNDTRACK</strong>
+                <small id="musicStatus">READY TO PLAY</small>
+            </div>
+        </div>
+
+        <div class="music-controls">
+            <button id="playBtn" aria-label="Play music">▶</button>
+            <button id="muteBtn" aria-label="Mute music">♪</button>
+        </div>
+
+        <input
+            type="range"
+            id="volume"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.5"
+            aria-label="Music volume"
+        >
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">EL<span>.</span></div>
+
+        <p>DESIGNED IN THE DIGITAL UNIVERSE.</p>
+
+        <p class="copyright">
+            © <span id="year"></span> NABIL IKINADA MUNTY ALL RIGHTS RESERVED.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
